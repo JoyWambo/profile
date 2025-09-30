@@ -3,69 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <title>Joy's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="main-body">
     <!-- Navigation Bar -->
-    <header>
-      <nav>
-        <table align="center" cellpadding="10">
-          <tr>
-            <td><a href="#home">Home</a></td>
-            <td><a href="#about">About</a></td>
-            <td><a href="#work">Work</a></td>
-            <td><a href="#resume">Resume</a></td>
-            <td><a href="#contact">Contact</a></td>
-          </tr>
-        </table>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">Joy</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-      <hr />
-      <h1 align="center">Welcome to Joy's Portfolio</h1>
-      <p align="center">
-        <strong>Developer | Designer | Chart Analyst</strong>
-      </p>
-      <hr />
+    <section id="home" class="section home-section">
+      <div class="home-content no-avatar">
+        <div>
+          <h1 class="main-title accent-text">Hi 👋, I'm Joy</h1>
+          <p class="subtitle">
+            Developer & Designer passionate about clean, user-focused web
+            experiences.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/JoyWambo"
+              target="_blank"
+              class="social-icon"
+              >GitHub</a
+            >
+            <a href="https://linkedin.com/" target="_blank" class="social-icon"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section about-section">
       <h2>About Me</h2>
-      <ul>
-        <li>I build scalable web apps</li>
-        <li>I analyze charts and candlestick patterns</li>
-        <li>I design modern UIs with React and Tailwind</li>
+      <p>
+        I'm Joy, a developer and designer focused on building simple, scalable
+        web applications and clean user interfaces.
+      </p>
+      <ul class="about-list">
+        <li>Web app development</li>
+        <li>UI/UX design</li>
+        <li>Chart and data visualization</li>
+        <li>Continuous learner</li>
       </ul>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>React, Tailwind, HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express, MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <h3>Design</h3>
+          <p>Figma, Adobe XD</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Work Section -->
-    <section id="work">
+    <section id="work" class="section work-section">
       <h2>My Work</h2>
-      <ol>
-        <li>To-Do List App</li>
-        <li>Learning HTML</li>
-        <li>Portfolio Page</li>
-      </ol>
-      <div align="center">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/qz0aGYrrlhU?si=yCOMfOJWGKLVdaF1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+            alt="To-Do List App"
+            class="project-img"
+          />
+          <h3>To-Do List App</h3>
+          <p>A minimal app to manage daily tasks with a clean interface.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+            alt="Learning HTML"
+            class="project-img"
+          />
+          <h3>Learning HTML</h3>
+          <p>Simple tutorials and mini-projects to master HTML basics.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            alt="Portfolio Page"
+            class="project-img"
+          />
+          <h3>Portfolio Page</h3>
+          <p>This minimalist portfolio site.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-title">Featured Video</div>
+        <div class="video-frame-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/qz0aGYrrlhU?si=yCOMfOJWGKLVdaF1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
+    <section id="resume" class="section resume-section">
       <h2>Resume</h2>
-      <table border="1" align="center" cellpadding="8" cellspacing="0">
+      <table class="resume-table">
         <thead>
           <tr>
             <th>Role</th>
@@ -77,47 +151,65 @@
             <td>Frontend Developer</td>
             <td>React, Tailwind, HTML/CSS</td>
           </tr>
+          <tr>
+            <td>UI/UX Designer</td>
+            <td>Figma, Adobe XD</td>
+          </tr>
+          <tr>
+            <td>Chart Analyst</td>
+            <td>Technical Analysis, Data Visualization</td>
+          </tr>
         </tbody>
       </table>
+      <div class="resume-download">
+        <a href="#" class="download-btn">Download Resume (PDF)</a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+      <h2>Testimonials</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>
+            "Joy is a fantastic developer who always delivers clean, efficient
+            solutions."
+          </p>
+          <span>- Alex, Project Manager</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Creative, reliable, and a pleasure to work with."</p>
+          <span>- Sam, Designer</span>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section contact-section">
       <h2>Contact Me</h2>
-      <form>
-        <table align="center" cellpadding="5">
-          <tr>
-            <td><label for="name">Name:</label></td>
-            <td><input type="text" id="name" name="name" /></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email" /></td>
-          </tr>
-          <tr>
-            <td><label for="message">Message:</label></td>
-            <td>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                cols="40"
-              ></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center">
-              <input type="submit" value="Send" />
-            </td>
-          </tr>
-        </table>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group form-center">
+          <input type="submit" value="Send" class="submit-btn" />
+        </div>
       </form>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <hr />
-      <p align="center">&copy; 2025 Joy. All rights reserved.</p>
+      <p>&copy; 2025 Joy. All rights reserved.</p>
     </footer>
   </body>
 </html>
